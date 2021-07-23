@@ -1,0 +1,37 @@
+{
+    "env": {
+        "node": true,
+        "es2020": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "no-process-env": "off",
+        "camelcase": "off",
+        "quotes": "off",
+        "indent": "off",
+        "prefer-const": "off",
+        "dot-notation": "off",
+        "spaced-comment": "off",
+        "semi": "off",
+        "no-trailing-spaces": "off",
+        "eol-last": "off",
+        "no-debugger": "off",
+        "object-curly-newline": "off",
+        "comma-dangle": "off",
+        "keyword-spacing": "off",
+        "comma-spacing": "off",
+        "key-spacing": "off",
+        "object-curly-spacing": "off",
+        "object-shorthand": "off",
+        "semi-spacing": "off",
+        "no-multi-spaces": "off",
+        "arrow-spacing": "off",
+        "space-before-blocks": "off",
+        "space-infix-ops": "off"
+    }
+}

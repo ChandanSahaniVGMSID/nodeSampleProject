@@ -1,0 +1,142 @@
+.appContainer {
+    background-color: inherit;
+    .meetingsSurveyContainer {
+        .meetingSurveyTemplatesListContainer {
+            .meetingSurveyTemplatesHeader {
+                font-size: 20px;
+                margin: 0 15px;
+            }
+            .meetingSurveyTemplatesContainer {
+                display: flex;
+                .meetingSurveyTemplateContainer {
+                    position: relative;
+                    box-shadow: 0 1px 4px #ddd;
+                    background-color: #fff;
+                    border-radius: 8px;
+                    margin: 10px;
+                    padding: 10px;
+                    width: 300px;
+                    height: 144px;
+                    .meetingSurveyTemplateTitle {
+                        font-size: 16px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    .meetingSurveyTemplateDescription {
+                        font-size: 14px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                    }
+                    .meetingSurveyTemplateActions {
+                        position: absolute;
+                        bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .meetingsSurveyPollContainer {
+            background-color: #fff;
+            padding: 16px;
+            box-shadow: 0 1px 4px #ddd;
+            .meetingsSurveyPollContainerHeader {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            div[class*="ui-form__input"] {
+                div[class*="ui-input"] {
+                    width: 100%;
+                    input[class*="ui-input__input"] {
+                        width: 100%;
+                    }
+                }
+            }
+            div[class*="ui-form__checkbox"] {
+                div[class*="ui-checkbox"] {
+                    color: inherit;
+                    div[class*="ui-checkbox__indicator"] {
+                        border-color: rgb(72, 70, 68);
+                    }
+                }
+            }
+        }
+
+        .emptyPollContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 60vh;
+            .emptyPollLabel {
+                font-size: 20px;
+                font-weight: 600;
+                padding-top: 16px;
+            }
+        }
+
+        .meetingsSurveyResultsContainer {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 16px;
+            box-shadow: 0 1px 4px #ddd;
+            .meetingsSurveyResultsContainerHeader {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            .meetingsSurveyResultsContainerBody {
+                display: flex;
+                margin-bottom: 10px;
+                div {
+                    margin-right: 20px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .meetingsSurveyResultsContainerActions {
+                button {
+                    margin-right: 20px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .meetingsSurveyResultsContainerDialog {
+        width: 90vw !important;
+        overflow-x: auto;
+        .meetingsSurveyResultsContainerTable {
+            div[class*="ui-table__cell__content"] {
+                overflow: hidden;
+            }
+            .meetingsSurveyResultsContainerTableHeader {
+                font-size: 14px;
+                font-weight: 700;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .meetingsSurveyResultsContainerTableContent {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.inMeetingContainer {
+    > div[class*="ui-flex"] {
+        padding-left: 0px;
+    }
+}

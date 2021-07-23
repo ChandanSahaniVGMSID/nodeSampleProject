@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.8",
+  "id": "<unique-guid-for-app-id>",
+  "version": "1.0",
+  "packageName": "teams-meeting-survey",
+  "developer": {
+    "name": "Withum",
+    "websiteUrl": "https://<your-app-domain>//",
+    "privacyUrl": "https://<your-app-domain>//privacy.html",
+    "termsOfUseUrl": "https://<your-app-domain>/tou.html"
+  },
+  "name": {
+    "short": "LOCAL: Teams Meeting Survey",
+    "full": "LOCAL: Teams Meeting Survey"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://<your-app-domain>/meetingsSurveyTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team",
+        "groupchat"
+      ],
+      "context": [
+        "channelTab",
+        "privateChatTab",
+        "meetingSidePanel",
+        "meetingDetailsTab",
+        "meetingChatTab"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "<your-app-domain>"
+  ],
+  "showLoadingIndicator": true,
+  "isFullScreen": false,
+  "webApplicationInfo": {
+    "id": "<app-registration-id>",
+    "resource": "api://<your-app-domain>/<app-registration-id>"
+  }
+}

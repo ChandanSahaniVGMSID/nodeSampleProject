@@ -1,0 +1,50 @@
+{
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "plugin:react/recommended"
+    ],
+    "plugins": [
+        "react",
+        "react-hooks"
+    ],
+    "rules": {
+        "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+        "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
+        "react/jsx-key": "off",
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": [
+            "error"
+        ],
+        "indent": "off",
+        "quotes": "off",
+        "prefer-const": "off",
+        "dot-notation": "off",
+        "spaced-comment": "off",
+        "semi": "off",
+        "no-trailing-spaces": "off",
+        "eol-last": "off",
+        "no-debugger": "off",
+        "lines-between-class-members": "off",
+        "brace-style": "off",
+        "camelcase": "off",
+        "no-multiple-empty-lines": "off",
+        "no-undef": "off",
+        "comma-dangle": "off",
+        "no-extra-boolean-cast": "off",
+        "object-shorthand": "off",
+        "quote-props": "off",
+        "template-curly-spacing": "off",
+        "curly": "off",
+        "arrow-spacing": "off",
+        "space-before-blocks": "off",
+        "keyword-spacing": "off"
+    }
+}
